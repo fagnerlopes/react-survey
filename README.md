@@ -30,32 +30,32 @@ Aula 10 - roteiro - ✔
 #### Front End 
 ---------
 
-(✔) Criar estado em App para candidates[]
+(✔) Criar estado em App para candidates[]<br/>
 (✔) Definir setInterval de 1 segundo e ler 
-   backend em componentDidMount
+   backend em componentDidMount<br/>
 (✔) Conferir se os dados estão sendo buscados
-   corretamente
+   corretamente<br/>
 
 #### Componentizar app
-   (✔) Spinner
-   (✔) Header
-   (✔) Candidates 
-   (✔) Card 
-   (✔) Candidate 
-   (✔) Position
-   (✔) Picture
-   (✔) Info
-   (✔) Name
-   (✔) Votes
-   (✔) Percentage
-   (✔) Popularity
+   (✔) Spinner<br/>
+   (✔) Header<br/>
+   (✔) Candidates <br/>
+   (✔) Card <br/>
+   (✔) Candidate <br/>
+   (✔) Position<br/>
+   (✔) Picture<br/>
+   (✔) Info<br/>
+   (✔) Name<br/>
+   (✔) Votes<br/>
+   (✔) Percentage<br/>
+   (✔) Popularity<br/>
 
 #### Estilizar o app
 
-(✔) Animar transição dos cards com react-flip-move:
+(✔) Animar transição dos cards com react-flip-move:<br/>
    <https://github.com/joshwcomeau/react-flip-move>
 
-(✔) Animar alteração dos números com react-countup 
+(✔) Animar alteração dos números com react-countup:<br/>
    <https://github.com/glennreyes/react-countup>
 
 #### Referência
