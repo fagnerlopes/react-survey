@@ -1,4 +1,4 @@
-# react-survey-system
+# Survey System
 A basic Bootcamp IGTI exercise front end built with React.js
 
 ### Setup
