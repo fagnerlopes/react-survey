@@ -8,11 +8,16 @@ install dependencies<br/>
 # Clone the repository
 git clone https://github.com/fagnerlopes/react-survey.git
 
-cd react-survey
+cd react-survey/frontend
 
 yarn
 
 yarn start
+
+cd ..
+cd backend
+
+npm start
 
 ```
 
