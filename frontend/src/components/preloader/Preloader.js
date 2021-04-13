@@ -1,8 +1,9 @@
 import React from 'react';
+import css from './preloader.module.css';
 
 function preloader({description}) {
   return (
-    <div>
+    <div className={css.flexRow}>
       <div className="preloader-wrapper small active">
         <div className="spinner-layer spinner-blue-only">
           <div className="circle-clipper left">
