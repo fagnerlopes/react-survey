@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Percentage({children}) {
+export default function Percentage({previousPercentage}) {
   return (
     <div>
-      {children} 
+      {previousPercentage} 
     </div>
   );
 }

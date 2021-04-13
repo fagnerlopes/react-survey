@@ -2,25 +2,18 @@ import React from 'react';
 import css from './votes.module.css';
 import CountUp from 'react-countup';
 
-export default function Votes({children}) {
+export default function Votes({value, previous}) {
   return (
     <div className={css.votes}>
       <CountUp
-        start={-875.039}
-        end={160527.012}
-        duration={2.75}
-        separator=" "
-        decimals={4}
-        decimal=","
-        prefix="EUR "
-        suffix=" left"
-        onEnd={() => console.log('Ended! 👏')}
-        onStart={() => console.log('Started! 💨')}
+        start={previous}
+        end={value}
+        duration={0.6}
+        separator="."
       >
-        {({ countUpRef, start }) => (
+        {({ countUpRef }) => (
           <div>
             <span ref={countUpRef} />
-            <button onClick={start}>Start</button>
           </div>
         )}
       </CountUp>      

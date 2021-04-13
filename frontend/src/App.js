@@ -9,6 +9,8 @@ export default class App extends Component {
 
     this.state = {
       candidates: [],
+      previousVotes: [],
+      previousPercentage: [],
     }
     this.interval = null;
   }
@@ -18,9 +20,18 @@ export default class App extends Component {
       fetch('http://localhost:8080/votes')
       .then(res => {
         return res.json().then((json)=>{
-          console.log(json);
+          console.log(json); 
+
+          const previousVotes = this.state.candidates.map(({id, votes}) =>{
+            return { id, votes};
+          });
+          const previousPercentage = this.state.candidates.map(({id, percentage}) =>{
+            return { id, percentage};
+          });
           this.setState({
             candidates: json.candidates,
+            previousVotes,
+            previousPercentage
           });
         });
       });
@@ -29,7 +40,7 @@ export default class App extends Component {
 
   }
   render() {
-    const { candidates } = this.state;
+    const { candidates, previousVotes, previousPercentage } = this.state;
     if(candidates.length === 0) {
       return (
         <div className="container col s-4">
@@ -41,7 +52,11 @@ export default class App extends Component {
     return (
       <div className="container">
         <Header>Votação</Header>
-        <Candidates candidates={candidates}/>
+        <Candidates 
+          previousPercentages={previousPercentage} 
+          previousVotes={previousVotes} 
+          candidates={candidates}
+        />
       </div>
     )
   }
