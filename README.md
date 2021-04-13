@@ -9,16 +9,14 @@ git clone https://github.com/fagnerlopes/react-survey.git
 
 # Start backend
 cd react-survey/backend
-
+npm install
 npm start
-
 
 
 # Start frontend
 cd ..
 cd frontend
 yarn
-
 yarn start
 
 ```
