@@ -3,21 +3,23 @@ A basic Bootcamp IGTI exercise front end built with React.js
 
 ### Setup
 
-install dependencies<br/>
 ```shell
 # Clone the repository
 git clone https://github.com/fagnerlopes/react-survey.git
 
-cd react-survey/frontend
+# Start backend
+cd react-survey/backend
 
+npm start
+
+
+
+# Start frontend
+cd ..
+cd frontend
 yarn
 
 yarn start
-
-cd ..
-cd backend
-
-npm start
 
 ```
 
